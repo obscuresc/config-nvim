@@ -1,6 +1,6 @@
 return
 {
-	{'folke/tokyonight.nvim', opts = {}, priority = 1000, lazy = false,
+	{'folke/tokyonight.nvim', opts = {}, lazy = false, priority = 1000,
 		config = function()
 			vim.cmd([[colorscheme tokyonight]])
 		end,
@@ -10,7 +10,11 @@ return
 	{'nvim-treesitter/nvim-treesitter'},
 	{'nvim-treesitter/playground'},
 	{'nvim-tree/nvim-web-devicons',	lazy = true},
-
+	{'nvim-lualine/lualine.nvim', lazy = true,
+		event = 'VeryLazy',
+		requires = {'nvim-tree/nvim-web-devicons'},
+		opts = { theme = 'auto' }
+	},
 
 	-- debugging startup process of config
 	{
