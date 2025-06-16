@@ -21,6 +21,8 @@ There a few things we can use
     - git management
 - file tree
     - telescope is could at finding files, not necessarily seeing files
+- for C and C++
+    - there is the ouroboros plugin, maybe others, that can switch between source and header files
 
 
 
